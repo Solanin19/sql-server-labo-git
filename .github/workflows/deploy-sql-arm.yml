@@ -4,11 +4,11 @@ on:
     branches: [ main ]
     paths: [templates/**, .github/workflows/deploy-sql-arm.yml] 
 
-    env:
+env:
   AZURE_RG: github-actions
   AZURE_SUBSCRIPTION: 9be80377-c788-445f-9ef2-0686f0efee7b
   
-  jobs:
+jobs:
   create-sql-databases:
     runs-on: ubuntu-latest
 
